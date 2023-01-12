@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://unpkg.com/browse/swiper@6.0.4/swiper-bundle.min.css"
+    /> -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/package/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <!-- <a href="#" class="logo"> <i class="bx bxs-movie"></i>Movies</a> -->
+      <div class="header">
+        <a href="" class="logo"
+          ><i class="bx bxs-movie"></i><span>F</span>ilmzoo</a
+        >
+
+        <div class="bx bx-menu" id="menu-icon" name="menu"></div>
+
+        <!-- Menu -->
+        <ul class="navbar">
+          <li><a href="#home" class="home-active">Home</a></li>
+          <li><a href="#movies">Movies</a></li>
+          <li><a href="#coming">Animes</a></li>
+          <li><a href="#newsletter">Series</a></li>
+        </ul>
+        <a href="#" class="btn btn-sign-up">Sign In</a>
+      </div>
+    </header>
+
+    <section class="home swiper main-container-home" id="home">
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+
+        <!-- Box 1 -->
+        <!-- <div class="swiper-slide container">
+          <img src="./image/home2.jpg" alt="" />
+          <div class="home-text">
+            <span>Marvels Universe</span>
+            <h1>Avengers: <br />Infinity War</h1>
+            <a href="#" class="btn">Download Now</a>
+            <a href="#" class="play"><i class="bx bx-play"></i></a>
+          </div>
+        </div> -->
+        <!-- Box 2 -->
+        <div class="swiper-slide container">
+          <img src="./image/home3.jpg" alt="" />
+          <div class="home-text">
+            <span>Marvels Universe</span>
+            <h1>Spider-Man <br />Far from Home</h1>
+            <a href="#" class="btn">Download Now</a>
+            <a href="#" class="play"><i class="bx bx-play"></i></a>
+          </div>
+        </div>
+        <!-- Box 3 -->
+        <!-- <div class="swiper-slide container">
+          <img src="./image/37cec86b302f97aa3846d1dd7ee2a9d4.jpg" alt="" />
+          <div class="home-text">
+            <h1>Daredevil</h1>
+            <a href="#" class="btn">Download Now</a>
+            <a href="#" class="play"><i class="bx bx-play"></i></a>
+          </div>
+        </div> -->
+      </div>
+      <div class="swiper-pagination"></div>
+    </section>
+    <div class="main-container">
+      <h2 class="heading-secondary">Popular Movies</h2>
+    </div>
+    <section class="movies main-container reveal">
+      <div class="carousel">
+        <div class="carouselbox"></div>
+        <a class="switchLeft sliderButton" onclick="sliderScrollLeft()"
+          ><i class="bx bx-chevron-left"></i
+        ></a>
+
+        <a class="switchRight sliderButton" onclick="sliderScrollRight()"
+          ><i class="bx bx-chevron-right"></i>
+        </a>
+      </div>
+    </section>
+    <section class="slider-1-section reveal main-container">
+      <!-- <h2 class="heading-seconday slider-1-heading">
+        Explore Our Site To Find More
+      </h2> -->
+      <div class="scroll-holder">
+        <div class="scroll-tray">
+          <div>
+            <img class="slider-1-img" src="image/1.webp" />
+          </div>
+          <div>
+            <img class="slider-1-img" src="image/2.webp" />
+          </div>
+          <div>
+            <img class="slider-1-img" src="image/3.webp" />
+          </div>
+          <div>
+            <img class="slider-1-img" src="image/4.webp" />
+          </div>
+          <div>
+            <img src="image/5.webp" />
+          </div>
+          <div>
+            <img class="slider-1-img" src="image/6.webp" />
+          </div>
+          <div>
+            <img class="slider-1-img" src="image/7.webp" />
+          </div>
+          <div>
+            <img class="slider-1-img" src="image/8.webp" />
+          </div>
+          <div>
+            <img class="slider-1-img" src="image/9.webp" />
+          </div>
+          <div>
+            <img class="slider-1-img" src="image/10.webp" />
+          </div>
+          <div>
+            <img class="slider-1-img" src="image/11.jpeg" />
+          </div>
+          <div>
+            <img class="slider-1-img" src="image/12.jpeg" />
+          </div>
+          <div>
+            <img class="slider-1-img" src="image/13.webp" />
+          </div>
+          <div>
+            <img class="slider-1-img" src="image/12.jpeg" />
+          </div>
+          <div>
+            <img class="slider-1-img" src="image/11.jpeg" />
+          </div>
+          <div>
+            <img class="slider-1-img" src="image/10.webp" />
+          </div>
+          <div>
+            <img class="slider-1-img" src="image/9.webp" />
+          </div>
+          <div>
+            <img class="slider-1-img" src="image/8.webp" />
+          </div>
+          <div>
+            <img class="slider-1-img" src="image/7.webp" />
+          </div>
+          <div>
+            <img class="slider-1-img" src="image/6.webp" />
+          </div>
+          <div>
+            <img class="slider-1-img" src="image/5.webp" />
+          </div>
+        </div>
+      </div>
+
+      <!-- icons background  -->
+      <!-- <section class="icon-back">
+        <div class="row">
+          <div>
+            <i class="bx bx-movie icons"></i>
+            <i class="bx bx-movie icons"></i>
+            <i class="bx bx-movie icons"></i>
+            <i class="bx bx-movie icons"></i>
+            <i class="bx bx-movie icons"></i>
+            <i class="bx bx-movie icons"></i>
+            <i class="bx bx-movie icons"></i>
+            <i class="bx bx-movie icons"></i>
+            <i class="bx bx-movie icons"></i>
+            <i class="bx bx-movie icons"></i>
+            <i class="bx bx-movie icons"></i>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <i class="bx bx-movie icons"></i>
+            <i class="bx bx-movie icons"></i>
+            <i class="bx bx-movie icons"></i>
+            <i class="bx bx-movie icons"></i>
+            <i class="bx bx-movie icons"></i>
+            <i class="bx bx-movie icons"></i>
+            <i class="bx bx-movie icons"></i>
+            <i class="bx bx-movie icons"></i>
+            <i class="bx bx-movie icons"></i>
+            <i class="bx bx-movie icons"></i>
+            <i class="bx bx-movie icons"></i>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <i class="bx bx-movie icons"></i>
+            <i class="bx bx-movie icons"></i>
+            <i class="bx bx-movie icons"></i>
+            <i class="bx bx-movie icons"></i>
+            <i class="bx bx-movie icons"></i>
+            <i class="bx bx-movie icons"></i>
+            <i class="bx bx-movie icons"></i>
+            <i class="bx bx-movie icons"></i>
+            <i class="bx bx-movie icons"></i>
+            <i class="bx bx-movie icons"></i>
+            <i class="bx bx-movie icons"></i>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <i class="bx bx-movie icons"></i>
+            <i class="bx bx-movie icons"></i>
+            <i class="bx bx-movie icons"></i>
+            <i class="bx bx-movie icons"></i>
+            <i class="bx bx-movie icons"></i>
+            <i class="bx bx-movie icons"></i>
+            <i class="bx bx-movie icons"></i>
+            <i class="bx bx-movie icons"></i>
+            <i class="bx bx-movie icons"></i>
+            <i class="bx bx-movie icons"></i>
+            <i class="bx bx-movie icons"></i>
+          </div>
+        </div>
+      </section> -->
+    </section>
+
+    <!-- Popular Anime Section -->
+    <section class="anime-section reveal">
+      <div class="main-container">
+        <h2 class="heading-secondary">Popular Animes</h2>
+      </div>
+      <section class="anime-slider-section">
+        <div class="box">
+          <div class="imgBx">
+            <img src="/image/1.webp" alt="" />
+          </div>
+          <div class="layer layer1"></div>
+          <div class="layer layer2"></div>
+          <div class="contentBx">
+            <div>
+              <h3>Post Title</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Necessitatibus quisquam aut magnam obcaecati molestiae assumenda
+                vel iusto maxime quo qui
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="imgBx">
+            <img src="/image/1.webp" alt="" />
+          </div>
+          <div class="layer layer1"></div>
+          <div class="layer layer2"></div>
+          <div class="contentBx">
+            <div>
+              <h3>Post Title</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Necessitatibus quisquam aut magnam obcaecati molestiae assumenda
+                vel iusto maxime quo qui
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="imgBx">
+            <img src="/image/27.webp" alt="" />
+          </div>
+          <div class="layer layer1"></div>
+          <div class="layer layer2"></div>
+
+          <div class="contentBx">
+            <div>
+              <h3>Post Title</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Necessitatibus quisquam aut magnam obcaecati molestiae assumenda
+                vel iusto maxime quo qui
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <div class="load-more-container main-container">
+      <a class="load-more-btn">Load more</a>
+    </div>
+
+    <!-- Popular Movies -->
+    <section class="anime-section reveal">
+      <div class="main-container">
+        <h2 class="heading-secondary">Popular Series</h2>
+      </div>
+      <section class="anime-slider-section movie-load-section"></section>
+    </section>
+    <div class="load-more-container main-container">
+      <a class="load-more-btn-movies">Load more</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="logos-container">
+          <li>
+            <a href="#" class="logo filmzoo-footer-logo"
+              ><i class="bx bxs-movie"></i><span>F</span>ilmzoo</a
+            >
+          </li>
+          <ul class="footer-logos">
+            <li>
+              <a href="#"><i class="logo-footer bx bxl-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="logo-footer bx bxl-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="logo-footer bx bxl-telegram"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-links-container">
+          <ul class="footer-links">
+            <li><a class="footer-link" href="">Movies</a></li>
+            <li><a class="footer-link" href="">Series</a></li>
+            <li><a class="footer-link" href="">Animes</a></li>
+          </ul>
+        </div>
+
+        <div class="copyright-section">
+          <p>© 2023 Filmzoo</p>
+        </div>
+      </div>
+    </footer>
+    <!-- CDN scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.2/axios.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://use.fontawesome.com/43a67162d6.js"></script>
+
+    <!-- <script src="https://unpkg.com/browse/swiper@8.4.5/swiper-bundle.min.js"></script> -->
+    <!-- Main Scripts -->
+    <script src="script.js"></script>
+    <script src="slider.js"></script>
+    <script src="anime.js"></script>
+  </body>
+</html>
