@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="pages.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="/style.css" /> -->
+    <title>Movie App</title>
+    <!-- <link rel="stylesheet" href="/script.js" /> -->
+  </head>
+  <body>
+    <header>
+      <!-- <a href="#" class="logo"> <i class="bx bxs-movie"></i>Movies</a> -->
+      <div class="header">
+        <a href="" class="logo"
+          ><i class="bx bxs-movie"></i><span>F</span>ilmzoo</a
+        >
+
+        <div class="bx bx-menu" id="menu-icon" name="menu"></div>
+
+        <!-- Menu -->
+        <ul class="navbar">
+          <li><a href="#home" class="home-active">Home</a></li>
+          <li><a href="#movies">Movies</a></li>
+          <li><a href="#coming">Animes</a></li>
+          <li><a href="#newsletter">Series</a></li>
+        </ul>
+        <a href="./Pages/signup.html" class="btn btn-sign-up">Sign up</a>
+      </div>
+    </header>
+    <div class="main-container searching-container">
+      <div class="search">
+        <input class="searchBar" type="text" placeholder="Search Anime..." />
+        <!-- <button>Search</button> -->
+      </div>
+
+      <div class="movie-container favorites">
+        <div class="movies-grid">
+          <!-- <div class="card" data-id="123456">
+                  <div class="img">
+                      <img src="https://unsplash.it/500/1000" alt="">
+                          </div>
+                          <div class="info">
+                              <h2>Movie Name</h2>
+                              <div class="single-info">
+                                  <span>Rate: </span>
+                                  <span>10 / 10</span>
+                              </div>
+                              <div class="single-info">
+                                  <span>Release Date: </span>
+                                  <span>10-04-2022</span>
+                              </div>
+                          </div>
+                      </div> -->
+        </div>
+      </div>
+    </div>
+    <section class="anime-slider-section movie-load-section"></section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="logos-container">
+          <li>
+            <a href="#" class="logo filmzoo-footer-logo"
+              ><i class="bx bxs-movie"></i><span>F</span>ilmzoo</a
+            >
+          </li>
+          <ul class="footer-logos">
+            <li>
+              <a href="#"><i class="logo-footer bx bxl-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="logo-footer bx bxl-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="logo-footer bx bxl-telegram"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-links-container">
+          <ul class="footer-links">
+            <li><a class="footer-link" href="">Movies</a></li>
+            <li><a class="footer-link" href="">Series</a></li>
+            <li><a class="footer-link" href="">Animes</a></li>
+          </ul>
+        </div>
+
+        <div class="copyright-section">
+          <p>© 2023 Filmzoo</p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.2/axios.js"></script>
+    <script src="/Pages/movie.js"></script>
+    <script src="/script.js"></script>
+  </body>
+</html>

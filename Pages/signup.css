@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,500&family=Poppins:wght@100;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  position: relative;
+  background-color: #020307;
+  height: 100vh;
+  overflow: hidden;
+}
+.container {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #4070f4; */
+  column-gap: 30px;
+  /* z-index: 2000; */
+  margin: 3rem 0 0 0;
+}
+.form {
+  position: absolute;
+  /* background: #4267b2ad; */
+  background: #232836cc;
+  border-radius: 6px;
+  max-width: 430px;
+  width: 100%;
+  padding: 30px;
+  z-index: 5;
+}
+.form.signup {
+  opacity: 0;
+  pointer-events: none;
+}
+.forms.show-signup .form.signup {
+  opacity: 1;
+  pointer-events: auto;
+}
+.form.signup .forms.login {
+  opacity: 0;
+  pointer-events: none;
+}
+.login-header {
+  font-size: 28px;
+  font-weight: 600;
+  color: #f55f62;
+  text-align: center;
+}
+
+form {
+  margin-top: 30px;
+}
+.form .field {
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+  border-radius: 6px;
+}
+.field input,
+.field button {
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 6px;
+}
+.field button {
+  color: #fff;
+  /* background-color: #0171d3; */
+  background-color: #f55f62;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.field button:hover {
+  background-color: #016dcb;
+}
+.field input {
+  outline: none;
+  padding: 0 15px;
+  border: 1px solid #cacaca;
+}
+.field input:focus {
+  border-bottom-width: 2px;
+}
+.eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #8b8b8b;
+  cursor: pointer;
+  padding: 5px;
+}
+.form-link {
+  text-align: center;
+  margin-top: 10px;
+}
+.form-link span,
+.form-link span a {
+  font-size: 14px;
+  font-weight: 400;
+  /* color: #232836; */
+  color: #f55f62;
+}
+.form-content a {
+  /* color: #0171d3; */
+  color: #f55f62;
+  text-decoration: none;
+}
+.form a:hover {
+  text-decoration: underline;
+}
+
+.line {
+  position: relative;
+  height: 1px;
+  width: 100%;
+  margin: 36px 0;
+  background-color: #d4d4d4;
+}
+.line::before {
+  content: "Or";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #23283600;
+  color: #fff;
+  font-weight: bold;
+}
+.media-options a {
+  display: flex;
+  background-color: #4267b2;
+  align-items: center;
+  justify-content: center;
+}
+a.facebook {
+  color: #fff;
+  background-color: #4267b2;
+}
+a.facebook .facebook-icon {
+  height: 28px;
+  width: 28px;
+  color: #0171d3;
+  font-size: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+.facebook-icon,
+img.google-img {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+}
+.google-option {
+  background-color: #fff;
+}
+img.google-img {
+  height: 20px;
+  width: 20px;
+  object-fit: cover;
+}
+a.google {
+  border: 1px solid #cacaca;
+  background-color: #fff;
+}
+a.google span {
+  font-weight: 500;
+  color: #232836;
+}
+
+@media screen and (max-widht: 400px) {
+  .form {
+    padding: 15px 10px;
+  }
+}
+
+/*  */
+.icon-back {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  /* bottom: -400px; */
+  top: 20px;
+}
+
+.row {
+  /* background-color: #fff; */
+
+  height: 4rem;
+  text-align: center;
+  display: flex;
+  padding: 10px;
+  white-space: nowrap;
+  font-size: 64px;
+  transform: rotate(-15deg);
+  position: relative;
+  top: -50%;
+}
+.icons {
+  /* color: rgba(0, 0, 0, 0.5); */
+  color: #020307;
+  transition: 1s;
+  padding: 0 5px;
+  user-select: none;
+  cursor: default;
+  animation: iconColor 20s linear infinite;
+}
+
+@keyframes iconColor {
+  /* 0% {
+    color: #f55f62;
+  }
+  20% {
+  }
+  40% {
+    color: #8e82f8;
+  }
+  60% {
+    color: #303030;
+  } */
+  80% {
+    color: #f55f62;
+  }
+  100% {
+    color: #020307;
+  }
+}
+.icons:hover {
+  transition: 0s;
+  /* color: #0f0; */
+  color: #f55f62;
+  /* text-shadow: 0 0 120px #0f0; */
+  text-shadow: 0 0 120px #f55f62;
+}
+/* .bx-movie {
+    /* background-color: rgb(238, 238, 238, 0.01); */
+/* color: #f55f62; */
+/* font-family: "Poppin"; */
+/* font-size: 24px; */
+/* } */
+.row div {
+  animation: animate 80s linear infinite;
+  animation-delay: -80s;
+}
+@keyframes animate {
+  0% {
+    transform: translateX(40px);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
